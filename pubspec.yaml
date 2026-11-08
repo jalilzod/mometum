@@ -1,0 +1,43 @@
+name: momentum
+description: Momentum — a premium offline to-do app with smart guidance, focus tracking and motivation.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.1.2
+  path_provider: ^2.1.4
+  flutter_local_notifications: ^19.2.1
+  timezone: ^0.10.0
+  share_plus: ^10.1.4
+  file_picker: ^10.0.0
+  intl: any # version is pinned by flutter_localizations
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+
+# App icon — save ONE 1024x1024 PNG as assets/icon/icon.png, then run:
+#   dart run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/icon/icon.png"
+  android: "ic_launcher"
+  ios: true
+  remove_alpha_ios: true                         # App Store rejects icons with transparency
+  min_sdk_android: 21
+  # Android 8+ adaptive icon: the full-bleed artwork is the foreground layer.
+  # Launchers crop the outer ~18%, so keep the symbol inside the centre 60%.
+  adaptive_icon_background: "#6C5CE7"
+  adaptive_icon_foreground: "assets/icon/icon.png"

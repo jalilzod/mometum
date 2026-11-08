@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Momentum — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Momentum to-do app. Momentum works fully offline and collects no personal data.">
+<style>
+  :root {
+    --bg: #f5f6fb; --surface: #ffffff; --text: #12142a; --muted: #6e7391;
+    --border: #e3e6f0; --accent: #6c5ce7; --accent2: #b16cff; --ok: #1fb57a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0b14; --surface: #141625; --text: #f2f3fa; --muted: #8c91ad;
+      --border: #262a42; --accent: #8b7cff; --accent2: #c77dff; --ok: #2ed69a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  header { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .logo {
+    width: 52px; height: 52px; border-radius: 16px; flex: none;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: grid; place-items: center; box-shadow: 0 8px 24px rgba(108,92,231,.35);
+  }
+  .logo svg { width: 28px; height: 28px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0; letter-spacing: -0.5px; }
+  .sub { color: var(--muted); font-size: 14px; margin: 2px 0 0; }
+  .lang { margin-left: auto; display: flex; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 999px; padding: 4px; }
+  .lang button { border: 0; background: none; color: var(--muted); font: inherit; font-weight: 700;
+    font-size: 13px; padding: 6px 14px; border-radius: 999px; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #fff; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+    padding: 22px 24px; margin-top: 22px; }
+  .tldr { border: 0; background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #fff; }
+  .tldr h2 { color: #fff; margin-top: 0; }
+  .tldr ul { margin: 0; padding-left: 20px; }
+  h2 { font-size: 19px; margin: 6px 0 8px; letter-spacing: -0.2px; }
+  p, li { margin: 0 0 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-size: 12.5px; text-transform: uppercase; letter-spacing: .06em; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 32px; }
+  [data-lang] { display: none; }
+  html[lang="en"] [data-lang="en"], html[lang="ru"] [data-lang="ru"] { display: block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+    </div>
+    <div>
+      <h1><span data-lang="en">Privacy Policy</span><span data-lang="ru">Политика конфиденциальности</span></h1>
+      <p class="sub"><span data-lang="en">Momentum — To-do &amp; Focus · Effective November 9, 2026</span><span data-lang="ru">Momentum — задачи и фокус · Действует с 9 ноября 2026 г.</span></p>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="en" aria-pressed="true">EN</button>
+      <button type="button" data-set="ru" aria-pressed="false">RU</button>
+    </div>
+  </header>
+
+  <!-- ───────────── ENGLISH ───────────── -->
+  <div data-lang="en">
+    <section class="card tldr">
+      <h2>In short</h2>
+      <ul>
+        <li>Momentum works <b>100% offline</b>. There are no accounts and no servers.</li>
+        <li>We <b>do not collect, store, sell or share</b> any personal data.</li>
+        <li>Your tasks stay <b>only on your device</b>. You can delete them at any time.</li>
+        <li>No ads, no analytics, no tracking.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>1. Who we are</h2>
+      <p>Momentum (“the app”, “we”) is a personal task manager for Android and iOS. This policy explains how the app handles information.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Information we collect</h2>
+      <p><b>None.</b> The app has no sign-up, no login and no internet connection to our servers. We cannot see your tasks or anything else you enter.</p>
+    </section>
+
+    <section class="card">
+      <h2>3. Data stored on your device</h2>
+      <p>To work, the app saves the following <b>locally on your device only</b>:</p>
+      <ul>
+        <li>Tasks you create: title, notes, priority, category, due date, reminders, checklist and repeat settings.</li>
+        <li>Focus timer sessions (start and end times).</li>
+        <li>App settings: your name (optional, used only for the greeting), theme, language, daily goal and notification preferences.</li>
+      </ul>
+      <p>This data never leaves your device unless you choose to export it.</p>
+    </section>
+
+    <section class="card">
+      <h2>4. Permissions</h2>
+      <table>
+        <tr><th>Permission</th><th>Why</th></tr>
+        <tr><td>Notifications</td><td>To remind you about due tasks and send optional motivational quotes. All notifications are created on your device.</td></tr>
+        <tr><td>Alarms &amp; reminders (Android)</td><td>To deliver reminders at the exact minute.</td></tr>
+        <tr><td>Run at startup (Android)</td><td>To restore scheduled reminders after the phone restarts.</td></tr>
+        <tr><td>Files (only when you choose)</td><td>To import a backup file you pick. The app reads only that file.</td></tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>5. Export and import</h2>
+      <p>When you tap <i>Export backup</i>, the app creates a JSON file and opens your phone’s share sheet. You decide where it goes (for example Files, Google Drive or a messenger). Those services handle the file under their own privacy policies. We never receive a copy.</p>
+    </section>
+
+    <section class="card">
+      <h2>6. Third parties</h2>
+      <p>The app contains no advertising, analytics, crash-reporting or tracking SDKs, and shares no data with third parties.</p>
+    </section>
+
+    <section class="card">
+      <h2>7. Deleting your data</h2>
+      <p>You are always in control. Open <b>Settings → Data → Delete all data</b> to erase everything instantly, or simply uninstall the app. Because nothing is stored online, there is nothing left for us to delete.</p>
+    </section>
+
+    <section class="card">
+      <h2>8. Children</h2>
+      <p>The app does not knowingly collect any information from anyone, including children under 13.</p>
+    </section>
+
+    <section class="card">
+      <h2>9. Changes to this policy</h2>
+      <p>If this policy changes, the new version will be published on this page with an updated effective date.</p>
+    </section>
+
+    <section class="card">
+      <h2>10. Contact</h2>
+      <p>Questions about this policy: <a href="mailto:mingyuan.cs98@gmail.com">mingyuan.cs98@gmail.com</a></p>
+    </section>
+  </div>
+
+  <!-- ───────────── RUSSIAN ───────────── -->
+  <div data-lang="ru">
+    <section class="card tldr">
+      <h2>Коротко</h2>
+      <ul>
+        <li>Momentum работает <b>полностью офлайн</b>. Нет аккаунтов и серверов.</li>
+        <li>Мы <b>не собираем, не храним, не продаём и не передаём</b> персональные данные.</li>
+        <li>Ваши задачи хранятся <b>только на вашем устройстве</b>. Удалить их можно в любой момент.</li>
+        <li>Без рекламы, аналитики и отслеживания.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>1. О приложении</h2>
+      <p>Momentum («приложение», «мы») — личный менеджер задач для Android и iOS. Эта политика объясняет, как приложение обращается с информацией.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Какие данные мы собираем</h2>
+      <p><b>Никакие.</b> В приложении нет регистрации, входа и подключения к нашим серверам. Мы не видим ваши задачи и любые другие введённые данные.</p>
+    </section>
+
+    <section class="card">
+      <h2>3. Данные на вашем устройстве</h2>
+      <p>Для работы приложение сохраняет <b>только локально на устройстве</b>:</p>
+      <ul>
+        <li>Созданные задачи: название, заметки, приоритет, категорию, срок, напоминания, чек-лист и повтор.</li>
+        <li>Сессии таймера фокуса (время начала и окончания).</li>
+        <li>Настройки: ваше имя (необязательно, только для приветствия), тему, язык, цель на день и настройки уведомлений.</li>
+      </ul>
+      <p>Эти данные не покидают устройство, если вы сами не сделаете экспорт.</p>
+    </section>
+
+    <section class="card">
+      <h2>4. Разрешения</h2>
+      <table>
+        <tr><th>Разрешение</th><th>Зачем</th></tr>
+        <tr><td>Уведомления</td><td>Напоминать о сроках задач и присылать мотивационные цитаты (по желанию). Все уведомления создаются на устройстве.</td></tr>
+        <tr><td>Будильники и напоминания (Android)</td><td>Чтобы напоминания приходили точно в срок.</td></tr>
+        <tr><td>Запуск при включении (Android)</td><td>Чтобы восстановить напоминания после перезагрузки телефона.</td></tr>
+        <tr><td>Файлы (только по вашему выбору)</td><td>Чтобы импортировать выбранный вами файл резервной копии. Приложение читает только этот файл.</td></tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>5. Экспорт и импорт</h2>
+      <p>При нажатии <i>Экспорт копии</i> приложение создаёт JSON-файл и открывает меню «Поделиться». Вы сами решаете, куда его отправить (например, в Файлы, Google Диск или мессенджер). Эти сервисы обрабатывают файл по своим правилам конфиденциальности. Мы копию не получаем.</p>
+    </section>
+
+    <section class="card">
+      <h2>6. Третьи лица</h2>
+      <p>В приложении нет рекламы, аналитики, сбора отчётов о сбоях и средств отслеживания. Данные третьим лицам не передаются.</p>
+    </section>
+
+    <section class="card">
+      <h2>7. Удаление данных</h2>
+      <p>Всё под вашим контролем. Откройте <b>Настройки → Данные → Удалить все данные</b>, чтобы мгновенно всё стереть, или просто удалите приложение. Так как ничего не хранится в интернете, удалять с нашей стороны нечего.</p>
+    </section>
+
+    <section class="card">
+      <h2>8. Дети</h2>
+      <p>Приложение сознательно не собирает никакой информации ни от кого, включая детей младше 13 лет.</p>
+    </section>
+
+    <section class="card">
+      <h2>9. Изменения политики</h2>
+      <p>Если политика изменится, новая версия будет опубликована на этой странице с новой датой вступления в силу.</p>
+    </section>
+
+    <section class="card">
+      <h2>10. Контакты</h2>
+      <p>Вопросы по политике: <a href="mailto:mingyuan.cs98@gmail.com">mingyuan.cs98@gmail.com</a></p>
+    </section>
+  </div>
+
+  <footer>© 2026 Momentum</footer>
+</div>
+<script>
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var saved = null;
+    try { saved = localStorage.getItem('momentum-privacy-lang'); } catch (e) {}
+    var lang = params.get('lang') || saved ||
+      ((navigator.language || 'en').toLowerCase().indexOf('ru') === 0 ? 'ru' : 'en');
+    function set(l) {
+      document.documentElement.lang = l;
+      document.title = l === 'ru' ? 'Momentum — Политика конфиденциальности' : 'Momentum — Privacy Policy';
+      document.querySelectorAll('.lang button').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.dataset.set === l));
+      });
+      try { localStorage.setItem('momentum-privacy-lang', l); } catch (e) {}
+    }
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.addEventListener('click', function () { set(b.dataset.set); });
+    });
+    set(lang === 'ru' ? 'ru' : 'en');
+  })();
+</script>
+</body>
+</html>
